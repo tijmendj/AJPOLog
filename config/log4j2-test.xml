@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+    <!-- We recommend using a system property to override this config file with one placed outside of git's tracking.
+         This way changing the export file doesn't affect the repository status -->
+    <File name="AJPOLog" fileName="logs/scratch.log" immediateFlush="true">
+    	<PatternLayout pattern="%d{ISO8601};[%t];%msg%n"/>
+    </File>
+  </Appenders>
+  <Loggers>
+    <Root level="all">
+      <AppenderRef ref="AJPOLog" level="trace"/>
+      <AppenderRef ref="Console" level="error"/>
+    </Root>
+  </Loggers>
+</Configuration>

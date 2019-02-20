@@ -1,0 +1,8 @@
+/recompile_rt.bat
+/target/
+
+# log files
+*.log
+*.csv
+*.xes
+*.txt
