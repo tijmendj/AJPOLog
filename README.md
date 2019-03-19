@@ -32,7 +32,7 @@ We will be using Eclipse, mostly to save ourselves from having to configure buil
 		1.	If the log is incomplete (the SUS stopped unexpectedly), the script will attempt to fix it
 
 ## Log conversion script instructions
-In the scripts folder, there is a Python script called convert.py. You can run it from your command line if you have installed. The tool requires a single argument: the filename or full path to the file you want to convert. The script will then output a converted file in the same location as the input file.
+In the scripts folder, there is a Python script called convert.py. You can run it from your command line if you have Python installed. The tool requires a single argument: the filename or full path to the file you want to convert. The script will then output a converted file in the same location as the input file.
 
 ## Using the notebook
 All instructions for using the notebook are included in the Notebook itself. Jupyter Notebook under Python 3 is required to open it.
